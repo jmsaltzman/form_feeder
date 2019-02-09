@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# ~/.ffrc: read by form_feed.sh script for printing (mostly) blank
+# pages on command, eg. when a button is pressed
+
+PRINTER_NAME=$PRINTER
+
+# Whether or not to print a message on the page. If false, a blank page is printed
+PRINT_MESSAGE=false
+
+# Options for what to print
+PRINT_PREFIX=true
+PRINT_DATE=true
+PRINT_SUFFIX=false
+
+# Prefix and suffix text
+PREFIX="Printed by the Form Feed Button at"
+DATE_FORMAT=""
+SUFFIX="THIS IS THE SUFFIX"
+
+# Whether or not to send an SMS
+SEND_TWILIO_SMS=true
+SMS_RECEIVER=$SMS_NUMBER
